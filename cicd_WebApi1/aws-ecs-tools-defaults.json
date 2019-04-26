@@ -1,0 +1,27 @@
+
+{
+    "region" : "eu-west-1",
+    "profile" : "AWS RI-ING NET",
+    "configuration" : "Release",
+    "tag"           : "cicdwebapi1:cicdtest",
+    "docker-build-working-dir" : "",
+    "cluster"                  : "fargate-cluster",
+    "launch-type"              : "FARGATE",
+    "launch-subnets"           : "subnet-519ba625,subnet-3b80bd4f,subnet-f23de2ab",
+    "launch-security-groups"   : "sg-05445a67",
+    "assign-public-ip"         : true,
+    "task-definition-name"     : "cicdWebApi1",
+    "task-cpu"                 : "256",
+    "task-memory"              : "512",
+    "task-definition-task-role" : "arn:aws:iam::190812271940:role/ecsTaskExecutionRole",
+    "task-execution-role"       : "ecsTaskExecutionRole",
+    "container-name"            : "cicdWebApi1",
+    "container-port-mapping"    : "80:80",
+    "container-environment-variables" : "\"ASPNETCORE_ENVIRONMENT\"=\"Production\"",
+    "skip-image-push"                 : false,
+    "cluster-service"                 : "cicdWebApi1",
+    "desired-count"                   : 1,
+    "deployment-minimum-healthy-percent" : 50,
+    "deployment-maximum-percent"         : 200,
+    "vstoolkit-deployment-mode"          : "DeployService"
+}
