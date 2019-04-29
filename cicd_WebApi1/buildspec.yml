@@ -10,5 +10,4 @@ commands:
 - dotnet publish -c release -o ./build_output cicd_WebApi1.csproj
 artifacts:
 files:
-- CodeBuild-cicd_WebApi1/build_output/**/*
-- scripts/**/*
+- s3://codepipeline-eu-west-1-853934031582/cicd_webapp_test_nev/SourceArti/Lza631S.zip
