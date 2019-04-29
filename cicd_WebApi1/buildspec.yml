@@ -4,7 +4,7 @@ phases:
     pre_build:
         commands:
         - echo Restore started on `date`
-        - dotnet restore cicd_WebApi1.csproj
+        #- dotnet restore cicd_WebApi1.csproj
     build:
         commands:
         - echo Build started on `date`
