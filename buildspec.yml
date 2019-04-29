@@ -8,7 +8,7 @@ phases:
     build:
         commands:
         - echo Build started on `date`
-        - dotnet build ./build_output cicd_WebApi1.csproj
+        - dotnet build cicd_WebApi1.csproj
         - dotnet publish -c release -o ./build_output cicd_WebApi1.csproj
 artifacts:
     files:
